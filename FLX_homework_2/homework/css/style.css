@@ -1,0 +1,157 @@
+@media print {
+.tm-sidebar,
+.heading,
+.blocks,
+#about,
+#ideas,
+#ideas+.tm-content-box {
+  display: none;
+}
+
+p::first-letter {
+  color: #87CEFA;
+  font-size: 30px;
+}
+
+h2.tm-section-title {
+  color: blue;
+  text-indent: 0;
+}
+
+h2+p.tm-section-description {
+  font-style: italic;
+}
+.tm-banner-inner {
+  height: 140%;
+  /* width: 200px; */
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 0;
+}
+.tm-banner {
+  padding-bottom: 0;
+}
+.tm-content-box {
+  margin-bottom: 0px;
+}
+.flex-2-col {
+  margin-left: 10%;
+}
+.padding-medium {
+  max-width: 60%;
+  padding: 30px;
+  float: left;
+  text-indent: 1.5em;
+}
+.flex-item>img {
+  margin-top: 30%;
+  padding-right: 10%;
+  width: 40%;
+  height: 40%;
+}
+}
+
+
+@media screen {
+/*  here starts screen*/
+
+p:first-letter {
+  font-size: 30px;
+  color: lightskyblue;
+}
+li.box.box-bg:hover {
+  background: lightskyblue;
+}
+li.box.box-bg>h2{
+  font-size:18px;
+}
+
+li.box.box-bg>h2:hover {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+div.tm-content-box, .tm-sidebar {
+  box-shadow: 0 0 20px grey;
+}
+
+section {
+  position: relative;
+}
+
+section::before {
+  content: "";
+  left: 0;
+  top: 0;
+  border-top: 20px solid lightblue;
+  border-right: 250px solid transparent;
+}
+
+h2+p {
+  font-style: italic;
+}
+
+.tm-banner {
+  border: 20px solid lightgrey;
+}
+
+.tm-banner-inner {
+  border: 0px;
+}
+
+.carousel-content {
+  color: gainsboro;
+  letter-spacing: 5px;
+}
+
+.tm-team-description-container,
+.tm-team-description-container+.flex-item {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 33%;
+}
+
+.tm-section-title~.tm-section-description {
+  line-height: 1.8;
+}
+
+ol a {
+  color: black;
+}
+
+ol a:hover {
+  color: lightblue;
+  text-decoration-style: double;
+}
+ol a:visited {
+  text-decoration: underline;
+}
+
+.text:after {
+  display:inline-block;
+  position:relative;
+  font-size:10px;
+  bottom:10px;
+  content: 'New';
+  color: red;
+}
+
+.box-work:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.submit-btn {
+  display: flex;
+  margin-left: auto;
+  background: transparent;
+  border-color: lightblue;
+  color: lightblue;
+}
+ /*here screen ends*/
+
+.submit-btn:hover {
+  color: white;
+  background: lightblue;
+}
+}
